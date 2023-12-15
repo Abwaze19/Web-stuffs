@@ -1,0 +1,15 @@
+body{
+	background-color: #f1f1f1;
+}
+.wrapper{
+	border: 3px inset green;
+	height: 350px;
+	background: green;
+}
+#sliderimages{
+	-webkit-transition:-webkit-transform 1s, src 1s;
+}
+#sliderimages:hover{
+	-webkit-transform:rotate(180deg);
+	src:url("programming.gif");
+}

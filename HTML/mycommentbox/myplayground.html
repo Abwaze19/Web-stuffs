@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/app.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    .respond{
+        margin-top: 40px;
+
+    }
+    .respond input input[type="text"],.respond input[type="email"],.respond textarea{
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+
+        border: 1px solid rgba(0, 0, 0, 1);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px ;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -khtml-border-radius: 5px;
+        border-radius: 5px; 
+
+        line-height: 1.4em;
+    }
+
+
+</style>
+<body>
+   <div id="respond">
+       <h3>leave a comment</h3>
+       <form action="post_comment.php" method="post" id="commentform">
+           <div>
+               <label for="comment_author" class="required">your name</label><br>
+               <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+           </div>
+           <div>
+               <label for="email" class="required">your email</label><br>
+               <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+            </div>
+           <div>
+               <label for="comment" class="required">your message</label><br>
+               <textarea name="comment" id="comment" required="required" rows="10" tabindex="4"></textarea>
+            </div>
+
+           <!--comment post id value hard coded as 1-->
+           <div>
+               <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID"><br>
+               <input type="submit" name="submit" value="submit comment">
+            </div>
+
+       </form>
+   </div> 
+</body>
+</html>

@@ -1,0 +1,25 @@
+#screen{
+	width:auto;
+	max-height: 1300px;
+	padding: 40px;
+	font-family: Bradley Hand ITC;
+	font-size: 24px;
+	line-height: 1.3em;
+	word-spacing: 0.5em;
+	background-color: rgb(0,255,178);
+	color:black;
+}
+#userInput{
+	padding: 40px;
+	width:93%;
+	height: 300px;
+	font-family: Bradley Hand ITC;
+	font-size: 24px;
+}
+footer{
+	background-color: rgb(0,255,178);
+	color:black;
+	height: 50px;
+	text-align: center;
+	padding: 30px;
+}

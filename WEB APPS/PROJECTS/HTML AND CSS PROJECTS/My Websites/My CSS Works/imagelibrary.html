@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel = "stylesheet" href = "imagelibrary.css" />
+	<title>My slider</title>
+</head>
+<body>
+	<div class = "wrapper">
+		<div class = "slider">
+			<img id = "sliderimages" src = "web.gif" alt = "web development" width = "1260px" height = "300px"/>
+		</div>
+		<ul id = "sliderlist">
+			<li onclick = "one()">One</li>
+			<li onclick = "two()">Two</li>
+			<li onclick = "three()">Three</li>
+			<li onclick = "four()">Four</li>
+		</ul>
+
+	</div>
+<script type="text/javascript">
+var image = document.getElementById("sliderimages");
+function one(){
+	image.src = "script.gif";
+}
+function two(){
+	image.src = "web.gif";
+}
+function three(){
+	image.src = "programming.gif";
+}
+function four(){
+	image.src = "frameworks.gif";
+}
+</script>
+</body>
+</html>

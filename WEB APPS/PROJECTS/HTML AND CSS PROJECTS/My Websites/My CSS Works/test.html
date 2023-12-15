@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button{
+display:inline-block;
+border:0px;
+background:#f1f1f1;
+width:50px;
+height:50px;
+color:white;
+padding:10px;
+margin:0px -2px;
+border:1px ridge #ddd;
+font-size:16px;
+}
+button:first-child{
+border-top-left-radius:5px;
+border-bottom-left-radius:5px;
+}
+button:last-child{
+border-top-right-radius:5px;
+border-bottom-right-radius:5px;
+}
+button:hover{
+background:green;
+color:white;
+box-shadow:0 3px 6px rgba(0,0,0,0.5);
+}
+button:active{
+background:red;
+}
+.pagination{
+text-align:center;
+}
+</style>
+</head>
+<body>
+<div class = "pagination">
+<button><<</button>
+<button>1</button>
+<button>2</button>
+<button>3</button>
+<button>4</button>
+<button>5</button>
+<button>6</button>
+<button>7</button>
+<button>>></button>
+</div>
+<form id = "radio" method = "get">
+<input type = "radio" />Boy<br />
+<input type = "radio" />Boy<br />
+<input type = "radio" />Boy<br />
+</form>
+<form>
+<input type="radio" name="sex" value="male">Male<br>
+<input type="radio" name="sex" value="female">Female
+</form>
+</body>
+</html>
+

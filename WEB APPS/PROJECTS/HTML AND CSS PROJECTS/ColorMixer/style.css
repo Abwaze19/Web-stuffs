@@ -1,0 +1,41 @@
+.wrapper{
+	margin:center;
+	width:100%;
+	height:1000px;
+	background: #ffffcc;
+}
+.rgbColor{
+	width:auto;
+	text-align: center;
+}
+.size{
+
+	padding: 10px;
+	width:31%;
+	height:100px;
+	float:left;
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	font-family: Bradley Hand ITC;
+}
+#red{
+	background-color:red;
+}
+#green{
+	background-color: green;
+}
+#blue{
+	background-color: blue;
+}
+#mixedColor{
+	clear:both;
+	background-color: rgb(128,128,128);
+	width:100%;
+	height:300px;
+}
+footer{
+	text-align: center;
+	font-family: Bradley Hand ITC;
+
+}

@@ -1,0 +1,119 @@
+body{
+	background: #f1f1f1;
+}
+header,footer,section,article,nav,aside{
+	display: block;
+}
+.wrapper{
+	z-index: 1000;
+	appearance:button;
+-moz-appearance:button; /* Firefox */
+-webkit-appearance:button; /* Safari and Chrome */
+}
+#main{
+	display: -webkit-box;
+	-webkit-box-orient:horizontal;
+	border: 2px inset green;
+}
+#news{
+	border: 2px inset green;
+	display: -webkit-box;
+	width: 320px;
+}
+#content{
+	border: 2px inset green;
+	display: -webkit-box;
+	-webkit-box-flex:1;
+}
+#left a:link, #left a:visited, i{
+	display: -webkit-box;
+	width: 280px;
+	text-decoration: none;
+	background: #009933;
+	color: white;
+	border-bottom: 2px ridge white;
+	padding: 20px;
+}
+#left a:hover, #left a:active{
+	background-color: #ffff99;
+	color: green;
+}
+a:before{
+  content:url(bullet.gif);
+  margin-right: 5px;
+}
+#contentwrapper{
+	display: -webkit-box;
+	-webkit-box-orient:horizontal;
+	border: 2px inset green;
+	background: #009933;
+	-webkit-box-flex:1;
+}
+#About{
+	border: 2px inset green;
+	display: -webkit-box;
+	width: 450px;
+	height:360px;
+	color: black;
+	font: italic 18px tahoma;
+	line-height: 1em;
+}
+#contact{
+	border: 2px inset green;
+	display: -webkit-box;
+	width: 450px;
+	height:360px;
+	color: black;
+	font: italic 18px tahoma;
+	line-height: 2em;
+}
+#marquee{
+	display: -webkit-box;
+	padding: 20px;
+	border: 2px inset green;
+	color: white;
+	background-color: #009933;
+}
+#myFooter{
+	border-bottom: 3px outset white;
+	height: 100px;
+	background: #009933;
+	color: white;
+	text-align: center;
+}
+#list{
+	float: left;
+	width: 920px;
+}
+#playlist li{
+	display: inline-block;
+	padding: 10px;
+	background: #009933;
+	float: left;
+	width: 126px;
+	margin-left: -40px;
+	margin-top: -15px;
+	border: 2px inset white;
+	color: white;
+	cursor: pointer;
+}
+#playlist li:hover{
+	background: #ff9900;
+}
+#videos{
+	float: right;
+}
+#inputs, textarea{
+	width: 290px;
+	padding:10px;
+	cursor: pointer;
+}
+#submit, #reset{
+	width: 150px;
+	padding: 10px;
+	cursor: pointer;
+}
+#submitreset{
+	margin-left: 110px;
+	border: 2px inset green;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Design</title>
+	<style type="text/css">
+		.header{
+			max-width: 100
+			%;
+			height: 200px;
+			background-color: green;
+		}
+		.content{
+			max-width: 100%;
+			height: 300px;
+			border-right: 5px ridge green;
+		}
+		section.content:nth-child(odd){
+			background-color: blue;
+		}
+		section.content:nth-child(even){
+			background-color: orange;
+		}
+		.footer{
+			clear:both;
+			max-width: 100%;
+			height: 200px;
+			background-color: black;
+		}
+	</style>
+	<meta name = "keywords" content = "html css javascript php python ruby java react nodejs reactNative vuejs">
+	<meta name = "author" content = "Odekunle Oluwatobiloba">
+	<meta name = "description" content="Full stack web development">
+	<meta http-equiv="refresh" content="30">
+</head>
+<body>
+	<header  class = "header">
+	</header>
+	<section class = "content">
+		<form oninput = "out.value = parseInt(a.value)+parseInt(b.value)">
+			<fieldset>
+				<legend>Addition</legend>
+				<label>0</label>
+				<input type="range" name="a" id = "a" value = "50">
+				<label>100+</label>
+				<input type="number" name="b" id = "b" value = "30">
+				<output for = "a b" name = "out"></output>
+
+			</fieldset>
+		</form>
+	</section>
+	<footer class =  "footer"> </footer>
+</body>
+</html>

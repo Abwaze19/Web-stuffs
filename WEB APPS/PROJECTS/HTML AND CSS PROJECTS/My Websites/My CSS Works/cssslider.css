@@ -1,0 +1,25 @@
+.slider{
+    border: 4px groove green;
+}
+#slider{
+    background-image: url(script.png);
+	background-repeat: no-repeat;
+	border: 3px groove green;
+	width: 100%;
+	height: 390px;
+	/* Chrome, Safari, Opera */
+    -webkit-animation-name: mySlider;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+@-webkit-keyframes mySlider {
+    0%  {-webkit-transform: rotateX(10deg);}
+    25%   {background: url(script.png);}
+    50%  {background: url(programming.png);}
+    75%  {background: url(web.png);}
+    100% {background: url(frameworks.png);}
+}

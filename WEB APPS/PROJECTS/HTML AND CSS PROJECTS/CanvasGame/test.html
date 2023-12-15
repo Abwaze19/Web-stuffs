@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.main{
+			border: 3px ridge red;
+			width: 100%;
+			height: 500px;
+			background-size: cover;
+			background-image: url("teamproject.png");
+			animation-name: slidkeshow;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate-reverse;
+			animation-timing-function: ease-in-out;
+		}
+		@keyframes slideshow{
+			0%{
+				background-image: url("teamproject.png");
+				border-color: green;
+			}
+			50%{
+				background-image: url('developer.png');
+				border-color: orange;
+			}
+			100%{
+				background-image: url("wehavecode.png");
+				border-color: yellow;
+			}
+		}
+	</style>
+</head>
+<body>
+	
+<select name = "code" multiple>
+	<option value="java1">java1</option>
+	<option value="java2">java2</option>
+	<option value="java3">java3</option>
+	<option value="java4">java4</option>
+</select>
+<input type="button" name="" onclick="displaySelected();" value="click">
+	<script>
+		function displaySelected(){
+			groups = document.querySelector('[name = "code"]');
+			for(var i = 0; i < groups.options.length; i++){
+				if(groups.options[i].selected){
+					alert(groups.options[i].value);
+				}
+			} 
+			
+		} 
+	</script>
+</body>
+</html>
